@@ -1,5 +1,5 @@
 input.onGesture(Gesture.Shake, function () {
-    basic.showNumber(0)
+    basic.showNumber(randint(1, 6))
 })
 basic.forever(function () {
 	
