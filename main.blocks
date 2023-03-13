@@ -1,1 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="z/ZOT,X`2TjpnVUJIQt)">電子骰</variable></variables><block type="pxt-on-start" id="z,Od35K0].pqeg:TN9zU" x="20" y="20"></block><block type="device_forever" id="qc=@E53uV+H.@Bn++Z3?" x="225" y="20"></block><block type="device_gesture_event" id="Pd@pO-J{8bt;Awe!KPqm" x="226" y="262"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="6%e4D#+`eux}9rYEqidn"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field><value name="VALUE"><shadow type="math_number" id="ZGMM#~L[~2#|?*V{8s}k" disabled="true"><field name="NUM">0</field></shadow><block type="device_random" id="cj+hcemnG0)Zw.LKXsEs"><value name="min"><shadow type="math_number" id="pQTj#TcXZMyO}B-U2jp)"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="Kk%Jr%6a{c_C]h_%G7Hw"><field name="NUM">6</field></shadow></value></block></value><next><block type="device_show_number" id="@GaUc-(yVlz+lO}Ay]iX"><value name="number"><shadow type="math_number" id="kOAv^BP}SU,a`!P4oXn[" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="E5mj1hewVY}s%n0i!=0r"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value></block></next></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="z/ZOT,X`2TjpnVUJIQt)">電子骰</variable></variables><block type="pxt-on-start" id="z,Od35K0].pqeg:TN9zU" x="20" y="20"></block><block type="device_forever" id="qc=@E53uV+H.@Bn++Z3?" x="225" y="20"></block><block type="device_gesture_event" id="Pd@pO-J{8bt;Awe!KPqm" x="226" y="262"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="6%e4D#+`eux}9rYEqidn"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field><value name="VALUE"><shadow type="math_number" id="ZGMM#~L[~2#|?*V{8s}k" disabled="true"><field name="NUM">0</field></shadow><block type="device_random" id="cj+hcemnG0)Zw.LKXsEs"><value name="min"><shadow type="math_number" id="pQTj#TcXZMyO}B-U2jp)"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="Kk%Jr%6a{c_C]h_%G7Hw"><field name="NUM">6</field></shadow></value></block></value><next><block type="controls_if" id="QkpB~q$j`6-@H%_{bkfX"><mutation elseif="5"></mutation><value name="IF0"><shadow type="logic_boolean" id="{+8CGwf#fFf}a!w{j^9z"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="{=BgdJ*{A}T9XiRa2{i7"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="bqg/z@Su9n`j:$A-)M66"><field name="NUM">0</field></shadow><block type="variables_get" id="pc^*uwdfif@M0ZOBx|5D"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="J#pqTRk*NOn}aHzca#zt"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="xjGz3}Ol8DB|VE!}cr$z"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . # . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement><value name="IF1"><block type="logic_compare" id="yGbQXNkDeuewKw,:@9zO"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="{M^{#49f|Z.1Cdd1:=:Y" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="J{A8dJ3W@$L#r;tC8M*C"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="ZcPlI.}F,s/8cT{62.Af"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="$UDD$mr^V|NWOF84Qrro"><field name="LEDS">`
+        # . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . # . .
+        `</field></block></statement><value name="IF2"><block type="logic_compare" id="6^:w#wW;EW[RbxkHsi6X"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="e8@x~1}#+v:QyD8qd+%g" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="iE!hek(Vf1Hp5b:wV,YC"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="4F:E}g1R*XcXRLHem7f["><field name="NUM">3</field></shadow></value></block></value><statement name="DO2"><block type="device_show_leds" id="(#P?pHooH7kKcoUJSx[`"><field name="LEDS">`
+        # . . . . 
+        . . . . . 
+        . # . . . 
+        . . . . . 
+        . . # . .
+        `</field></block></statement><value name="IF3"><block type="logic_compare" id="5]k!qVR/VRa[qJTegSD`"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="0hq5=@8~Fv,g7~OM5.r9" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="gVCM}g2N1d?R*tE+yfOB"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="?i1=ECRv_;VeRCm2(+5@"><field name="NUM">4</field></shadow></value></block></value><statement name="DO3"><block type="device_show_leds" id="f7W2[HdP;LLj4|j1(MI6"><field name="LEDS">`
+        # . # . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . # . .
+        `</field></block></statement><value name="IF4"><block type="logic_compare" id="cFEm-pH[?!gRMX}KM^0["><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="zpxMs/j={cn.G^np]Tzd" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="CCN9?YW!INB=Or+WK5+O"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="@tM}^VL[,5J/PSjB~l?Q"><field name="NUM">5</field></shadow></value></block></value><statement name="DO4"><block type="device_show_leds" id="E9mjz0}dY1k6pS?VA7mv"><field name="LEDS">`
+        # . # . . 
+        . . . . . 
+        . # . . . 
+        . . . . . 
+        # . # . .
+        `</field></block></statement><value name="IF5"><block type="logic_compare" id="Oi+2LVxeR~D:nYh^|t-G"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="9Q7MJWUID8vaVKe?f/_Y" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="xTdH5nuTYhbeD6h_@6|}"><field name="VAR" id="z/ZOT,X`2TjpnVUJIQt)">電子骰</field></block></value><value name="B"><shadow type="math_number" id="muWq5^w?L`1*WG8qp^L!"><field name="NUM">6</field></shadow></value></block></value><statement name="DO5"><block type="device_show_leds" id="dNdt%FN%=dth(%^Aq;mv"><field name="LEDS">`
+        # . # . . 
+        . . . . . 
+        # . # . . 
+        . . . . . 
+        # . # . .
+        `</field></block></statement></block></next></block></statement></block></xml>
